@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Soda_Machine
 {
+    
+
     class SodaMachine
     {
+        public List<Coin> register;
+        public List<Can> inventory;
     }
 }

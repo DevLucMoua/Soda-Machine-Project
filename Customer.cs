@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Soda_Machine
 {
+    
     class Customer
     {
+        Wallet wallet;
+        Backpack backpack;
     }
 }

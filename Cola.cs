@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Soda_Machine
 {
-    class Coins
+    class Cola
     {
+        public Cola(string name , double Cost)
+        {
+            string cola = name;
+            Cost = .35;
+
+        }
     }
 }

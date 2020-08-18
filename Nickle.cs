@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Soda_Machine
 {
-    class Backpack
+    class Nickle
     {
-        List<Can> cans;
     }
 }

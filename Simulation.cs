@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Soda_Machine
 {
+    
     class Simulation
     {
+        SodaMachine sodaMachine;
+        Customer customer;
     }
 }

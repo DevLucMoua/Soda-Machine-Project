@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace Soda_Machine
 {
-    class Backpack
+    class RootBeer
     {
-        List<Can> cans;
+        public RootBeer(string name, double Cost)
+        {
+            string rootBeer = name;
+            Cost = .60;
+        }
     }
 }
