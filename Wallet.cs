@@ -23,11 +23,28 @@ namespace Soda_Machine
             
         }
 
-        public void AddPennyToWallet()
+        public void AddPennyToWallet(int amount)
         {
             Penny penny = new Penny();
-            coins.Add(penny);
+            for (int i = 0; i <= amount; i++)
+            {
+                coins.Add(penny);
+            }
+        }
 
+        public void AddNickleToWallet(int amount)
+        {
+            Nickle nickle = new Nickle();
+            for (int i = 0; i <= amount; i++)
+            {
+                coins.Add(nickle);
+            }
+        }
+        
+        public void AddDimeToWallet()
+        {
+            Dime dime = new Dime();
+            
         }
     }
 }
