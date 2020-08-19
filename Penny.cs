@@ -8,7 +8,14 @@ namespace Soda_Machine
 {
     public class Penny : Coin
     {
-        
+        private double value;
+        public double Value
+        {
+            get
+            {
+                return value;
+            }
+        }
         public Penny()
         {
             name = "penny";

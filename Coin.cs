@@ -10,18 +10,13 @@ namespace Soda_Machine
     {
         public string name;
         public double value;
+        public double Value;
         public Coin()
         {
             
         }
 
-        //public double Value
-        //{
-        //    get
-        //    {
-        //        return Value;
-        //    }
-        //}
+      
 
     }
 }

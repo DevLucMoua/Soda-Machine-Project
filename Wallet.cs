@@ -17,5 +17,17 @@ namespace Soda_Machine
             card = new Card();
 
         }
+
+        public void AddTotaCoinToWallet()
+        {
+            
+        }
+
+        public void AddPennyToWallet()
+        {
+            Penny penny = new Penny();
+            coins.Add(penny);
+
+        }
     }
 }
