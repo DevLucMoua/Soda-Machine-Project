@@ -6,18 +6,23 @@ using System.Threading.Tasks;
 
 namespace Soda_Machine
 {
-    class Can
+    public abstract class Can
     {
-        private double cost;
+        public double cost;
         public string name;
 
-        public double Cost
+        public Can()
         {
-            get
-            {
-                return cost;
-            }
+
         }
+
+        //public double Cost
+        //{
+        //    get
+        //    {
+        //        return cost;
+        //    }
+        //}
         
     }
 }

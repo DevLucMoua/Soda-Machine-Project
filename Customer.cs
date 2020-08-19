@@ -11,5 +11,11 @@ namespace Soda_Machine
     {
         Wallet wallet;
         Backpack backpack;
+        public Customer()
+        {
+            wallet = new Wallet();
+            backpack = new Backpack();
+
+        }
     }
 }

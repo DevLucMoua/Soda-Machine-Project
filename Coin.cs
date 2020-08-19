@@ -6,18 +6,22 @@ using System.Threading.Tasks;
 
 namespace Soda_Machine
 {
-    class Coin
+    public abstract class Coin
     {
         public string name;
-        private double value;
-
-        public double Value
+        public double value;
+        public Coin()
         {
-            get
-            {
-                return Value;
-            }
+            
         }
+
+        //public double Value
+        //{
+        //    get
+        //    {
+        //        return Value;
+        //    }
+        //}
 
     }
 }

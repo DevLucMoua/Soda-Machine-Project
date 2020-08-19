@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace Soda_Machine
 {
-    class OrangeSoda
+    public class OrangeSoda : Can
     {
-        public OrangeSoda(string name, double Cost)
+        public OrangeSoda()
         {
-            string orangeSoda = name;
-            Cost = .06;
-
-
+            name = "orange soda";
+            cost = 0.06;
         }
     }
 }

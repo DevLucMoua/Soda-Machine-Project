@@ -9,5 +9,11 @@ namespace Soda_Machine
     class Backpack
     {
         List<Can> cans;
+
+
+        public Backpack()
+        {
+            cans = new List<Can>(); 
+        }
     }
 }

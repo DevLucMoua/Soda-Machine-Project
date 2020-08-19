@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,5 +12,15 @@ namespace Soda_Machine
     {
         SodaMachine sodaMachine;
         Customer customer;
+
+        public Simulation()
+        {
+            customer = new Customer();
+        }
+
+        public void BeginPurchase()
+        {
+
+        }
     }
 }

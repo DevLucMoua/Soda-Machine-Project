@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Soda_Machine
 {
-    class Cola
+    public class Cola : Can
     {
-        public Cola(string name , double Cost)
+        public Cola()
         {
-            string cola = name;
-            Cost = .35;
+            name = "cola";
+            cost = 0.35;
 
         }
     }
