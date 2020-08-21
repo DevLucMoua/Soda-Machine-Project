@@ -8,19 +8,23 @@ namespace Soda_Machine
 {
     class Wallet
     {
-        List<Coin> coins;
+        public List<Coin> coins;
         Card card;
         public Wallet()
         {
             coins = new List<Coin>();
+            AddTotalCoinToWallet();
             
             card = new Card();
 
         }
 
-        public void AddTotaCoinToWallet()
+        public void AddTotalCoinToWallet()
         {
-            
+            AddPennyToWallet(25);
+            AddNickleToWallet(15);
+            AddDimeToWallet(10);
+            AddQuarterToWallet(12);
         }
 
         public void AddPennyToWallet(int amount)
@@ -41,10 +45,23 @@ namespace Soda_Machine
             }
         }
         
-        public void AddDimeToWallet()
+        public void AddDimeToWallet(int amount)
         {
             Dime dime = new Dime();
-            
+            for (int i = 0; i <= amount; i++)
+            {
+                coins.Add(dime);
+            }
         }
+
+        public void AddQuarterToWallet(int amount)
+        {
+            Quarter quarter = new Quarter();
+            for (int i = 0; i <= amount; i++)
+            {
+                coins.Add(quarter);
+            }
+        }
+
     }
 }

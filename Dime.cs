@@ -8,15 +8,7 @@ namespace Soda_Machine
 {
     public class Dime : Coin
     {
-        private double value;
-
-        public double Value
-        {
-            get
-            {
-                return value;
-            }
-        }
+       
         public Dime()
         {
             name = "dime";

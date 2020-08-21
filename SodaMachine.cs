@@ -9,7 +9,7 @@ namespace Soda_Machine
 {
     
 
-    class SodaMachine
+    public class SodaMachine
     {
         public List<Coin> register;
         public List<Can> inventory;
@@ -20,9 +20,9 @@ namespace Soda_Machine
         {
             
             inventory = new List<Can>();
-            StockColaInSodaMachine(15);
-            StockOrangeSodaInSodaMachine(15);
-            StockRootBeerInSodaMachine(15);
+            StockColaInSodaMachine(10);
+            StockOrangeSodaInSodaMachine(10);
+            StockRootBeerInSodaMachine(10);
 
             register = new List<Coin>();
             StockPennyInMachine(50);
@@ -89,5 +89,39 @@ namespace Soda_Machine
                 inventory.Add(orangeSoda);
             }
         }
+        public bool CheckInventory(string soda)
+        {
+            foreach (var can in inventory)
+            {
+               if(can.name == soda)
+               {
+                    return true;
+               }
+            }
+            return false;   
+        }
+        public double CheckSodaPrice(string soda)
+        {
+            double canCost = 0;
+            foreach (var can in inventory)
+            {
+                if (can.name == soda)
+                {
+                    canCost = can.Cost;
+                    
+                }
+            }
+            return canCost;
+        }
+        public void DispenseSoda(string sodaSelected)
+        {
+            inventory.Remove();
+        }
+
+        public void CheckIfEnoughMoneyIsEntered()
+        {
+            if()
+        }
+
     }
 }

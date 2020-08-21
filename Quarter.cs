@@ -8,15 +8,7 @@ namespace Soda_Machine
 {
     public class Quarter : Coin
     {
-        private double value;
-
-        public double Value
-        {
-            get
-            {
-                return value;
-            }
-        }
+       
         public Quarter()
         {
             name = "quarter";
